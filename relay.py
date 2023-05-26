@@ -20,6 +20,10 @@ if command not in ["-on", "-off"]:
     print("Invalid command. Please use -on to turn the relay on, or -off to turn it off.")
     sys.exit(1)
 
+# I need to add current state polling
+# Status query 3A 46 45 30 31 30 30 30 30 30 30 31 30 46 31 0D 0A
+# State return value 3A 46 45 30 31 30 30 32 30 30 30 30 30 46 46 0D 0A
+    
 # Define commands for each relay
 relay_commands = {
     1: {"-on": "3A 46 45 30 35 30 30 30 30 46 46 30 30 46 45 0D 0A", "-off": "3A 46 45 30 35 30 30 30 30 30 30 30 30 46 44 0D 0A"},
