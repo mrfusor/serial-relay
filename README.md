@@ -9,3 +9,7 @@ To use, "sudo python relay.py 1 -on" turns relay 1 on, "sudo python relay.py 1 -
 "sudo python relay.py 0 -on" and "sudo python relay.py 0 -off" turn on and off all relays at once.
 
 For reference, the relay board shows up as: "ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter" with lsusb.
+
+"relui.py" is a text ui, run in same dir as relay.py, and provides a nice interface to select individual relays with arrow keys, and enter to toggle.
+
+It also has the option for toggling them all in a random sequence or in numerical order with a small delay between relays, using the keypresses "r" and "o" respectively.
